@@ -1,6 +1,6 @@
 {
   "name": "checkname",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "validates the file and folder names of a project",
   "preferGlobal": true,
   "bin": {
