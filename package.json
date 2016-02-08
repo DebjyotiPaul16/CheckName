@@ -7,7 +7,7 @@
     "checkname": "bin/main.js"
   },
   "dependencies": {
-    "async": "^1.5.2",
+    "byline": "^4.2.1",
     "chalk": "^1.1.1",
     "commander": "^2.9.0",
     "findit": "^2.0.0",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url":  "git+https://github.com/DebjyotiPaul16/CheckName.git"
+    "url": "git+https://github.com/DebjyotiPaul16/CheckName.git"
   },
   "keywords": [
     "filename",
