@@ -3,7 +3,6 @@ var path = require('path'),
   byline = require('byline'),
   cmd = require('commander'),
   chalk = require('chalk'),
-  //async = require("async"),
   pkg = require(path.join(__dirname, '../package.json')),
   fs = require('fs');
 
@@ -25,7 +24,7 @@ cmd.version(pkg.version)
   .usage('[--path][--custom-regex][--exclude][--use-gitignore]')
   .option('-c, --custom-regex', 'format type to check.', upper_case)
   .option('-l, --uppercase', 'uppercase checking', lower_case)
-  .option('-i, --use-gitignore', 'don\'t use ".gitignore"', true)
+  .option('-i, --gitignore', 'don\'t use ".gitignore"', true)
   .option('-x, --exclude [names]', 'files or Folder to exclude.')
   .option('-p, --path <folder path>', 'folder path to run a filename check', process.cwd())
 
@@ -40,12 +39,13 @@ var validateFileNames = {
   files_with_error: [],
   folders_with_error: [],
 
-  readAllFiles: function (srcPath, excludeArr) {
+  readAllFiles: function (srcPath, excludeArr,ignore) {
     //excludeArr: 
     stream.on('data', function (line) {
-
+   if(ignore){
       lineData = line.toString();
       excludeArr.push(lineData);
+      }
     });
     //fileReadError:
     stream.on('end', function () {
@@ -108,5 +108,5 @@ if (cmd.path) {
   if (cmd.exclude) {
     excludeArr = (cmd.exclude.split(',')).slice();
   }
-  validateFileNames.readAllFiles(cmd.path, excludeArr);
+  validateFileNames.readAllFiles(cmd.path, excludeArr,cmd.gitignore);
 }
