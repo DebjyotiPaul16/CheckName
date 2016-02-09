@@ -57,8 +57,10 @@ Files (lower case violation): 1
 ====================================
 ```
 ##Command
+
 - **-x** It takes some folder names as comma separated values an exclude them from traversing.
-         - if we specifically mention some filename it will only skip the input folder names form travering.
+         - if we specifically mention some filename it will only skip the input folder names form traversing.
+
  ```
  checkname -x "node_modules,.git"
  ```
