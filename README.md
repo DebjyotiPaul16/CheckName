@@ -53,7 +53,8 @@ Files (lower case violation): 1
 ====================================
 ```
 - **-x** It takes some folder names as comma separated values an exclude them from traversing.
-         - if we specifically mention some filename it will only skip the input folder names form travering.
+      - if we specifically mention some filename it will only skip the input folder names form travering.
+ 
  ```
  checkname -x "node_modules,.git"
  ```
@@ -70,6 +71,7 @@ Folders (lower case violation): 0
 Files (lower case violation): 1
 ====================================
  ```
+ 
 - **-p** required path for traversing the directory tree
        - takes string value of the system path
 ```
@@ -88,6 +90,7 @@ Folders (lower case violation): 0
 Files (lower case violation): 2
 ====================================
 ```
+
 Default values for traversing <tt>PATH => present directory</tt> and exclusion array <tt>['node_modules', 'bower_component', '.git', '.svn', '.hg']</tt>.
 
 ## Automated --help
