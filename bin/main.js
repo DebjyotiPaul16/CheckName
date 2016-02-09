@@ -22,8 +22,6 @@ stream = byline.createStream(stream);
 cmd.version(pkg.version)
   .description(pkg.description)
   .usage('[--path][--custom-regex][--exclude][--use-gitignore]')
-  .option('-c, --custom-regex', 'format type to check.', upper_case)
-  .option('-l, --uppercase', 'uppercase checking', lower_case)
   .option('-i, --gitignore', 'don\'t use ".gitignore"', true)
   .option('-x, --exclude [names]', 'files or Folder to exclude.')
   .option('-p, --path <folder path>', 'folder path to run a filename check', process.cwd())
