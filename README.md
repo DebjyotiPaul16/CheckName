@@ -12,15 +12,15 @@ Fork and clone the project and then do `npm install` to install the dependencies
 "CLIappname optional arguments"
 ```
 
-##Examples:
+#Examples:
 
-#Command
+##Command
 ```
 checkname -p "D:/users/projects"
 ```
 It will traverse the whole directory tree present in the given system path and gennerate the log of erroneous files and directories  in the corrosponding text files. 
 
-#Command
+##Command
 ```
 checkname 
 ```
@@ -29,7 +29,7 @@ It will generate the logs of files and folders in the present directory.
 
 Arguments are optional with short hand porperties, by default it will run with some default argument values.
 
-### Explanation of array options
+# Explanation of options
 
 A short name, single letter i.e. -f, or false if no short name is supported for this option, descriptions are as follows:
 	
@@ -38,8 +38,8 @@ A short name, single letter i.e. -f, or false if no short name is supported for 
          
 - **-i** reads the text file with some folder names and exclude them from traversing.
          - for default it is taking some default arguments as an array for exclusion.
-#Command
 
+##Command
 ```
 checkname -i
 ```
@@ -56,7 +56,7 @@ Folders (lower case violation): 0
 Files (lower case violation): 1
 ====================================
 ```
-#Command
+##Command
 - **-x** It takes some folder names as comma separated values an exclude them from traversing.
          - if we specifically mention some filename it will only skip the input folder names form travering.
  ```
@@ -75,7 +75,8 @@ Folders (lower case violation): 0
 Files (lower case violation): 1
 ====================================
  ```
-#Command
+ 
+##Command
 
 - **-p** required path for traversing the directory tree
        - takes string value of the system path
