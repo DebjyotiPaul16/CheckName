@@ -16,7 +16,6 @@ Fork and clone the project and then do `npm install` to install the dependencies
 
 ```
 checkname -p "D:/users/projects"
-
 ```
 It will traverse the whole directory tree present in the given system path and gennerate the log of erroneous files and directories  in the corrosponding text files. 
 
@@ -30,16 +29,13 @@ Arguments are optional with short hand porperties, by default it will run with s
 
 ### Explanation of array options
 
-1.	A short name, single letter i.e. -f, or false if no short name is supported for this option  
-2.	A description of the option  
-3.	The type of object the argument should map too.  
-	Below is a list of the return types followed by a description and a list of  
-	valid values you can use for this option to get desired type of Object output.
+A short name, single letter i.e. -f, or false if no short name is supported for this option, descriptions are as follows:
+	
 
-	- **-V:** tells the version of the application.
+- **-V:** tells the version of the application.<tt>i.e. 0.1.0 </tt>
          
- - **-i** reads the text file with some folder names and exclude them from traversing.
-          - for default it is taking some default arguments as an array for exclusion.
+- **-i** reads the text file with some folder names and exclude them from traversing.
+         - for default it is taking some default arguments as an array for exclusion.
 ```
 checkname -i
 ```
@@ -55,17 +51,15 @@ Total Files Scanned: 7
 Folders (lower case violation): 0
 Files (lower case violation): 1
 ====================================
-
 ```
- - **-x** It takes some folder names as comma separated values an exclude them from traversing.
-          - if we specifically mention some filename it will only skip the input folder names form travering.
+- **-x** It takes some folder names as comma separated values an exclude them from traversing.
+         - if we specifically mention some filename it will only skip the input folder names form travering.
  ```
  checkname -x "node_modules,.git"
- 
  ```
  ##Output
  ```
- ====================================
+====================================
 Working path : C:\Users\debjyoti.paul\checkname
 Exclusions : node_modules,.git
 ====================================
@@ -76,8 +70,8 @@ Folders (lower case violation): 0
 Files (lower case violation): 1
 ====================================
  ```
-	- **-p** required path for traversing the directory tree
-          - takes string value of the system path
+- **-p** required path for traversing the directory tree
+       - takes string value of the system path
 ```
 checkname -p "D:/projects/checkname"
 ```
@@ -93,7 +87,6 @@ Total Files Scanned: 7
 Folders (lower case violation): 0
 Files (lower case violation): 2
 ====================================
-
 ```
 Default values for traversing <tt>PATH => present directory</tt> and exclusion array <tt>['node_modules', 'bower_component', '.git', '.svn', '.hg']</tt>.
 
