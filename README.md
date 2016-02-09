@@ -116,8 +116,6 @@ Options:
 
   -h, --help                output usage information
   -V, --version             output the version number
-  -c, --custom-regex        format type to check.
-  -l, --uppercase           uppercase checking
   -i, --gitignore           don't use ".gitignore"
   -x, --exclude [names]     files or Folder to exclude.
   -p, --path <folder path>  folder path to run a filename check
