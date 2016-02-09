@@ -9,9 +9,9 @@ Fork and clone the project and then do `npm install` to install the dependencies
 ## Specify the argument syntax
 
 ```
-"appname aruments"
+"Appname optional arguments"
 
-##Example:
+Example:
 
 checkname -p "./" -x "node,.git, ....." -i  //** Arguments are optional **//
 
