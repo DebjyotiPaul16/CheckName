@@ -26,6 +26,8 @@ Options:
   -i, --gitignore           don't use ".gitignore"
   -x, --exclude [names]     files or Folder to exclude.
   -p, --path <folder path>  folder path to run a filename check
+  
+```
 
 # Licence
 
