@@ -6,7 +6,7 @@ CLI tool to check filename convention for a project by recursively walking throu
 
 Fork and clone the project and then do `npm install` to install the dependencies and take it away.
 
-## Specify the argument syntax
+## Argument syntax
 
 ```
 "Appname optional arguments"
