@@ -1,4 +1,4 @@
-#checkName 
+#CheckName 
 
 CLI tool to check filename convention for a project by recursively walking through directory trees.
 
