@@ -6,6 +6,22 @@ CLI tool to check filename convention for a project by recursively walking throu
 
 Fork and clone the project and then do `npm install` to install the dependencies and take it away.
 
+## Specify the argument syntax
+
+```
+"appname aruments"
+
+##Example:
+
+checkname -p "./" -x "node,.git, ....." -i  //** Arguments are optional **//
+
+Or
+
+checkname                                  //** works with default arguments **//
+
+
+```
+
 ## Automated --help
 
  The help information is auto-generated based on the information provided in the program, so the following `--help` info is for free:
